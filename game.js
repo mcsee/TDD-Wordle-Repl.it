@@ -16,7 +16,7 @@ class Game {
     this._attempts.push(word);    
   }
   hasLost() {
-    return this._attempts.length > 5;
+    return !this.hasWon() && this._attempts.length > 5;
   }
   wordsAttempted() {
     return this._attempts;
