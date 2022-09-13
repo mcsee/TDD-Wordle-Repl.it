@@ -11,6 +11,12 @@ class Word {
   letters() {
       return this._word.split("");
   }  
+  word() {
+      return this._word;
+  }  
+  sameAs(word) {
+    return word.word() == this.word();
+  }
 }
 
 module.exports = Word; 
